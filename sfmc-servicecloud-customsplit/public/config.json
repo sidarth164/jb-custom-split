@@ -1,0 +1,87 @@
+{
+	"key": "jb-custom-split",
+	"metaData": {
+		"icon": "images/icon.png",
+		"iconSmall": "images/icon_small.png"
+	},
+	"type": "RESTDECISION",
+	"lang": {
+		"en-US": {
+			"name": "Service Cloud Custom Split",
+			"description": "Custom Split activity that makes a decision based on data from Service Cloud"
+		}
+	},
+	"workflowApiVersion": "1.1",
+	"configurationArguments": {
+		"applicationExtensionKey": "jb-custom-split",
+		"save": {
+			"url": "https://jb-custom-split.herokuapp.com/activity/save",
+			"verb": "POST",
+			"body": "",
+			"useJwt": true,
+			"customerKey": "jb-custom-split"
+		},
+		"publish": {
+			"url": "https://jb-custom-split.herokuapp.com/activity/publish",
+			"verb": "POST",
+			"body": "",
+			"useJwt": true,
+			"customerKey": "jb-custom-split"
+		},
+		"validate": {
+			"url": "https://jb-custom-split.herokuapp.com/activity/validate",
+			"verb": "POST",
+			"body": "",
+			"useJwt": true,
+			"customerKey": "jb-custom-split"
+		}
+	},
+	"wizardSteps": [
+		{"key": "eventdefinitionkey", "label": "Event Definition Key"}
+	],
+	"outcomes": [
+		{
+			"arguments": {
+				"branchResult": "<KEY FOR PATH 1>"
+			},
+			"metaData": {
+				"label": "<LABEL FOR PATH 1>"
+			}
+		},
+		{
+			"arguments": {
+				"branchResult": "<KEY FOR PATH 2>"
+			},
+			"metaData": {
+				"label": "<LABEL FOR PATH 2>"
+			}
+		}
+	],
+	"userInterfaces": {
+		"runningModal": {
+			"url": "runningModal.html"
+		},
+		"runningHover": {
+			"url": "runningHover.html"
+		}
+	},
+	"arguments": {
+		"execute": {
+			"inArguments": [],
+			"outArguments": [],
+			"url": "https://jb-custom-split.herokuapp.com/activity/execute",
+			"verb": "POST",
+			"body": "",
+			"header": "",
+			"format": "json",
+			"useJwt": true,
+			"customerKey": "jb-custom-split",
+			"timeout": 90000
+		}
+	},
+	"edit": {
+		"url": "https://jb-custom-split.herokuapp.com/index.html",
+		"height": 200,
+		"width": 500
+	}
+}
