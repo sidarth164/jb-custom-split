@@ -42,18 +42,18 @@
 	"outcomes": [
 		{
 			"arguments": {
-				"branchResult": "<KEY FOR PATH 1>"
+				"branchResult": "yes_reg"
 			},
 			"metaData": {
-				"label": "<LABEL FOR PATH 1>"
+				"label": "yes registered"
 			}
 		},
 		{
 			"arguments": {
-				"branchResult": "<KEY FOR PATH 2>"
+				"branchResult": "not_reg"
 			},
 			"metaData": {
-				"label": "<LABEL FOR PATH 2>"
+				"label": "not registered"
 			}
 		}
 	],
