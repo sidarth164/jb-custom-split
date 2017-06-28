@@ -19,9 +19,9 @@ const jsforce = require('jsforce');
  */
 class ServiceCloud {
 	constructor (options) {
-		this.username = options.salesforce.serviceCloud.username;
-		this.password = options.salesforce.serviceCloud.password;
-		this.loginUrl = options.salesforce.serviceCloud.loginUrl;
+		this.username = options.username;
+		this.password = options.password;
+		this.loginUrl = options.loginUrl;
 		this.conn = {};
 	}
 
