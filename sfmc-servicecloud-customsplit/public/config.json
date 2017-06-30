@@ -18,22 +18,22 @@
 			"url": "https://jb-custom-split.herokuapp.com/activity/save",
 			"verb": "POST",
 			"body": "",
-			"useJwt": true,
-			"customerKey": "jb-custom-split"
+			"useJwt": false,
+			"customerKey": ""
 		},
 		"publish": {
 			"url": "https://jb-custom-split.herokuapp.com/activity/publish",
 			"verb": "POST",
 			"body": "",
-			"useJwt": true,
-			"customerKey": "jb-custom-split"
+			"useJwt": false,
+			"customerKey": ""
 		},
 		"validate": {
 			"url": "https://jb-custom-split.herokuapp.com/activity/validate",
 			"verb": "POST",
 			"body": "",
-			"useJwt": true,
-			"customerKey": "jb-custom-split"
+			"useJwt": false,
+			"customerKey": ""
 		}
 	},
 	"wizardSteps": [
@@ -74,8 +74,8 @@
 			"body": "",
 			"header": "",
 			"format": "json",
-			"useJwt": true,
-			"customerKey": "jb-custom-split",
+			"useJwt": false,
+			"customerKey": "",
 			"timeout": 90000
 		}
 	},
